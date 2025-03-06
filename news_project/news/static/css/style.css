@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
