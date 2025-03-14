@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Личный кабинет</h1>
+<h2>Избранные новости</h2>
+<ul>
+    {% for news in favorite_news %}
+        <li>
+            <h3>{{ news.title }}</h3>
+            <p>{{ news.content }}</p>
+            <small>{{ news.created_at }}</small>
+        </li>
+    {% empty %}
+        <li>У вас пока нет избранных новостей.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
